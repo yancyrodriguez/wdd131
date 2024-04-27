@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: steelblue;
+    background-color: rgb(22, 31, 156);
     color: #f1ebff;
 }
 
@@ -90,7 +90,7 @@ h3 {
 }
 
 .title {
-    background-color: steelblue;
+    background-color: rgb(22, 31, 156);
     display: flex;
     width: 100%;
     margin: 0;
@@ -126,5 +126,6 @@ div h2 {
 footer {
     padding: 0.2rem;
     text-align: center;
-    background-color: steelblue;
+    background-color: rgb(80, 77, 77);
+    color: white;
 }
