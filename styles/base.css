@@ -33,7 +33,7 @@ h3 {
 .card .left-image {
     float: left;
     margin-left: 15px ;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 .navigation {
     list-style: none;
@@ -56,7 +56,7 @@ h3 {
     text-align: center;
     color: black;
     font-weight: 1;
-    font-size: larger;
+    font-size: large;
     color: white;
 }
 
@@ -104,6 +104,10 @@ h3 {
     padding: 1.3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.p2 {
+    text-indent: 30px;
 }
 
 div {
