@@ -27,7 +27,7 @@ img {
 h3 {
     text-align: center;
     border-bottom: 1px solid black;
-    width: 60%;
+    width: 80%;
 }
 
 .card .left-image {
@@ -107,7 +107,7 @@ h3 {
 }
 
 .p2 {
-    text-indent: 30px;
+  padding-left: 20px;
 }
 
 div {
