@@ -1,37 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+	font-family: "Sansita", sans-serif;
+	background-color: #f4f4f4;
+	color: white;
 }
 
+header {
+	background-color: #1a5fb4;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
 h2 {
+    color: black;
     text-align: center;
 }
 
-.photo-grid {
+nav {
+	margin: 0 auto;
+	max-width: 800px;
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav a {
+	display: none;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+    background-color: #fff;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    color: white;
+}
+
+
+.active {
+	color: yellow;
+}
+
+main .grid {
     display: grid;
-    align-items: repeat(3. 1fr);
-    grid-gap: 10px; /* espacio entre elementos */
-    padding: 20px; /* margen interno */
+    grid-template-columns: 1fr;
+    gap: 3rem;
 }
 
-figure {
-    margin: 0;
-    text-align: center;
+main {
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
 }
 
 img {
-    width: 20%;
-    height: auto;
+	width: 100%;
+	height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
 }
 
 figcaption {
-    font-style: italic; /* estilo para las leyendas */
+    color: black;
 }
 
 footer {
-    padding: 0.2rem;
+    padding: 2rem;
     text-align: center;
-    background-color: rgb(80, 77, 77);
+    background-color: #1a5fb4;
     color: white;
 }
+
