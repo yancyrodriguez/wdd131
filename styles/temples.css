@@ -10,6 +10,7 @@ h2 {
 
 .photo-grid {
     display: grid;
+    align-items: repeat(3. 1fr);
     grid-gap: 10px; /* espacio entre elementos */
     padding: 20px; /* margen interno */
 }
