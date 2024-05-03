@@ -13,8 +13,6 @@ body {
 header {
 	background-color: #1a5fb4;
 	display: flex;
-	align-items: center;
-	justify-content: right;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -53,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-	text-decoration: underline;
+	text-decoration: none;
     background-color: #fff;
 }
 
@@ -72,9 +70,9 @@ nav a:hover {
 	color: yellow;
 }
 
-main .grid {
+.photo-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
 
@@ -82,14 +80,12 @@ main {
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
 
 img {
 	width: 100%;
 	height: auto;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 figcaption {
