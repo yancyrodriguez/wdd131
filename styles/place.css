@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-:root{
-    --dark-blue:#1daef6;
-    --light-blue: #eaf1f4;
-    --medium-blue:#0487D9;
-    --primary:#fff;
-    --red:#A62139;
-}
+
 
 *{
     padding: 0;
@@ -29,7 +23,7 @@ header{
 .hero{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(231, 234, 237);
 }
 
 .hero source, 
@@ -113,7 +107,7 @@ footer{
         left: -1rem;
         text-align: left;
         background: rgb(21, 1, 171);
-        color: var(--primary);
+        color: white;
         width: 10rem;
     }
 
