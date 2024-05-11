@@ -7,7 +7,7 @@ let oLastModif = document.lastModified;
 document.querySelector("#lastModified").innerHTML = `Last Modification: ${oLastModif}`;
 
 const temp = 28
-const wind = 5
+const wind = 8
 
 const windChill = document.querySelector('#windChill')
 
