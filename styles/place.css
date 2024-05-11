@@ -64,12 +64,6 @@ td{
     padding-left: .2rem;
 }
 
-footer{
-    padding: 1rem;
-    text-align: center;
-    color: white;
-    background: #af0505;
-}
 
 #currentyear,
 #lastModified{
@@ -123,5 +117,12 @@ footer{
 
     table{
         margin-top: 5rem;
+    }
+
+    footer{
+        padding: 1rem;
+        text-align: center;
+        color: white;
+        background: #af0505;
     }
 }
