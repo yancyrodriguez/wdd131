@@ -6,7 +6,7 @@ year.innerHTML = `©️ <span id="currentyear">${today.getFullYear()}</span>`;
 let oLastModif = document.lastModified;
 document.querySelector("#lastModified").innerHTML = `Last Modification: ${oLastModif}`;
 
-const temp = 18
+const temp = 28
 const wind = 5
 
 const windChill = document.querySelector('#windChill')
