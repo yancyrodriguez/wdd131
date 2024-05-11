@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Place | Yancy Rodriguez</title>
+        <meta name="author" content="Emanuel Jonatas">
+        <meta name="description" content="A place website to show JavaScript skills">
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Switzerland</h1>
+        </header>
+        <main>
+            <picture class="hero">
+                <source media="(min-width: 992px )" srcset="images/hero-large.webp">
+                <source media="(min-width: 768px )" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="A view of the sea in the Greece" width="767">
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <table class="content">
+                    <tr>
+                        <td class="title">Area: </td>
+                        <td>131,957 km²</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Population: </td>
+                        <td>10.43 million</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Capital: </td>
+                        <td>Athens</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Languages: </td>
+                        <td>Greek, Modern Greek</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Currency: </td>
+                        <td>Euro</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Time Zone: </td>
+                        <td>UTC+3</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Calling Code: </td>
+                        <td>+30</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Internet TLD: </td>
+                        <td>.gr</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <svg width="100" heigth="100" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #f8b62d;
+                            }
+
+                            .cls-1,.cls-2 {
+                                stroke: #231815;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .cls-2,.cls-4 {
+                                fill: #231815;
+                            }
+
+                            .cls-3 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <title/>
+                    <table class="content">
+                        <tr>
+                            <td class="title">Temerature: </td>
+                            <td>18°C</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Conditions: </td>
+                            <td>Partly Cloudy</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Wind: </td>
+                            <td>5 km/h</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Wind Chill: </td>
+                            <td id="windChill"></td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
+            <footer>
+                <p>
+                    <span id="currentyear"></span>
+                    🌟Yancy Veraliz Rodriguez 🌟 El Salvador
+                </p>
+                <p id="lastModified"></p>
+            </footer>
+        </body>
+    </html>
+    
