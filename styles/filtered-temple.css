@@ -114,6 +114,7 @@ img {
     max-width: 325px;
     height: 200px;
     border: 1px solid #333;
+    box-shadow: 0 0 30px #777;
 }
 .image-container {
     width: 350px;
@@ -121,7 +122,6 @@ img {
     margin: 15px auto ;
     background-color: #edf0ed;
     border: 1px solid rgb(254, 252, 252);
-    box-shadow: 5px 5px 20px color var(secondary);
 }
 .image-container span {
     color: rgb(18, 49, 183);
