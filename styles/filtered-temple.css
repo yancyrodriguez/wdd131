@@ -101,7 +101,7 @@ main p {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    background-color: #97DFFC;
+    background-color: rgb(79, 183, 228);
     padding: 20px;
 }
 section {
