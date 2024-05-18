@@ -7,7 +7,7 @@
     --active: yellow;
     --nav-text: white;
     --layout: solid 1px rgb(140, 2, 2);
-    --body-background: rgb(245, 245, 240);
+    --body-background: white;
 }
 * {
     margin: 0;
@@ -98,7 +98,7 @@ main p {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    background-color: white;
+    background-color: #97DFFC;
     padding: 20px;
 }
 section {
@@ -119,10 +119,12 @@ img {
     width: 350px;
     height: 400px;
     margin: 15px auto ;
-    background-color: rgb(21, 31, 96);
+    background-color: #edf0ed;
+    border: 1px solid rgb(254, 252, 252);
+    box-shadow: 5px 5px 20px color var(secondary);
 }
 .image-container span {
-    color: white;
+    color: rgb(18, 49, 183);
 }
 .navigation {
     background-color: rgb(21, 31, 96);

@@ -71,31 +71,30 @@ const temples = [
     // Add more temple objects here...
 
     {
-        templeName: "Durban South Africa",
-        location: "Umhlanga, South Africa",
-        dedicated: "2020, February, 16",
-        area: 19860,
-        alternate: "Durban South Africa",
+        templeName: "San Salvador, El Salvador",
+        location: "San Salvador, El Salvador",
+        dedicated: "2011, August, 21",
+        area: 27986,
+        alternate: "San Salvador, El Salvador Temple",
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/5-a34bb1899983ed73e499a18da741b3704e1d4d35.jpg"
+        "https://churchofjesuschrist.org/imgs/8c084fef6033bfd96c430cec43236af0b41740f5/full/320%2C/0/default"
       },
       {
-        templeName: "Copenhagen Denmark",
-        location: "Frederiksberg, Denmark",
-        dedicated: "2004, May, 23",
-        area: 25000,
-        alternate: "Copenhagen Denmark Temple",
+        templeName: "San Diego, California",
+        location: "San Diego, California, USA",
+        dedicated: "1993, April, 25",
+        area: 72000,
+        alternate: "San Diego California Temple",
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/copenhagen-denmark/400x250/copenhagen-denmark-temple-lds-278232-wallpaper.jpg"
+        "https://www.churchofjesuschrist.org/imgs/9fc6d53550ed3243fb8eca9ebceb284d4865e7db/full/320%2C/0/default"
       },
       {
-        templeName: "Asunción Paraguay",
-        location: "Asunción, Paraguay",
-        dedicated: "2002, May, 19",
-        area: 11906,
-        alternate: "Asunción Paraguay Temple",
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/asuncion-paraguay/400x250/2-5b20486ae3876279c35be147ef9e63aec256a459.jpeg"
+        templeName: "Salt Lake",
+	      location: "Salt Lake City, Utah, United States",
+	      dedicated: "1853, April, 6",
+	      area: 253000,
+	      imageUrl:
+	      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/800x500/slctemple7.jpg"
       },
     ];
     const container = document.querySelector("#cards");
