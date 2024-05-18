@@ -1,9 +1,9 @@
 :root {
     --navy-color: #042e61;
     --secondary: #727171ef;
-    --light-on-color: #ffffff00;
+    --light-on-color: white;
     --header-background: rgb(21, 31, 96) ;
-    --text-color: black;
+    --text-color: white;
     --active: yellow;
     --nav-text: white;
     --layout: solid 1px rgb(140, 2, 2);
@@ -98,9 +98,8 @@ main p {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    background-color: #969595;
+    background-color: white;
     padding: 20px;
-    box-shadow: 0 0 40px #434343;
 }
 section {
     margin: 0.15rem;
@@ -113,7 +112,6 @@ section {
 img {
     width: auto;
     max-width: 325px;
-    box-shadow: 0 0 30px #777;
     height: 200px;
     border: 1px solid #333;
 }
@@ -121,13 +119,13 @@ img {
     width: 350px;
     height: 400px;
     margin: 15px auto ;
-    background-color: rgb(167, 198, 207);
+    background-color: rgb(21, 31, 96);
 }
 .image-container span {
-    color: rgb(59, 48, 34);
+    color: white;
 }
 .navigation {
-    background-color: rgb(47, 21, 96);
+    background-color: rgb(21, 31, 96);
 }
 main {
     grid-row: 2/3;
@@ -148,14 +146,7 @@ footer {
     font-size: large;
 }
 @media only screen and (min-width: 631px){
-    /* main h1 {
-        font-size: xx-large;
-        font-family: Montserrat, sans-serif, serif;
-    }
-    main h2 {
-        letter-spacing: 5px;
-        font-size: x-large;
-    } */
+   
     
     .navigation {
         position: absolute;
@@ -171,7 +162,7 @@ footer {
         text-align: center;
         padding-top: 25px;
         padding-bottom: 30px;
-        /* margin: 0; */
+      
 	}
 	#menu {
 		display: none;
