@@ -2,6 +2,7 @@ CSS
 body {
   font-family: sans-serif;
   margin: 2rem; /* Add some margin around the form */
+  text-align: center;
 }
 
 fieldset {
