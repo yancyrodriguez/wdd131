@@ -54,3 +54,7 @@ input[type="submit"] {
   padding: 1rem;
   border:#ccc;
 }
+
+.rating {
+    text-align: center;
+}
