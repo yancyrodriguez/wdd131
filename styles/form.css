@@ -1,62 +1,110 @@
-CSS
 body {
-  font-family: sans-serif;
-  margin: 2rem; /* Add some margin around the form */
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.review-container {
+  background-color: #F0F0F5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; /* Ajuste del tamaño máximo del contenedor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: #3A003D;
+  color: #fff;
+  padding: 10px;
   text-align: center;
-}
-
-fieldset {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 5px; /* Add some rounded corners to the fieldset */
-}
-
-legend {
-  font-weight: bold;
-  padding-bottom: 0.5rem; /* Add some space between legend and form elements */
+  margin: -20px -20px 20px -20px;
+  border-radius: 8px 8px 0 0;
 }
 
 label {
-  display: block; /* Make labels appear on separate lines */
-  margin-bottom: 0.5rem;
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
 }
 
-select,
-input[type="text"],
-input[type="date"],
-textarea {
-  width: 100%; /* Make form controls fill the available space */
-  padding: 0.5rem;
+select, input[type="date"], textarea, input[type="text"], button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 3px; /* Add some rounded corners to form controls */
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-input[type="radio"] {
-  margin-right: 0.5rem; /* Add some spacing between radio buttons */
+#rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-input[type="checkbox"] {
-  margin-right: 1rem; /* Add some spacing between checkboxes and labels */
+#rating input {
+  display: none;
 }
 
-.usefulFeatures { /* Add a class to the checkbox container for styling */
-  display: flex; /* Arrange checkboxes and labels horizontally */
-  flex-wrap: wrap; /* Allow checkboxes to wrap to multiple lines if needed */
+#rating label {
+  font-size: 2em;
+  color: gray;
+  cursor: pointer;
 }
 
-textarea {
-  min-height: 100px; /* Set a minimum height for the textarea */
+#rating input:checked ~ label {
+  color: gold;
 }
 
-input[type="submit"] {
-  background-color: #4CAF50; /* Green color for submit button */
-  color: white;
-  padding: 1rem;
-  border:#ccc;
+#rating label:hover,
+#rating label:hover ~ label {
+  color: gold;
 }
 
-.rating {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features input {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #f0f0f0;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+footer {
+  background-color: #3A003D;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px; /* Ajuste del tamaño máximo del footer */
+}
+
+footer p {
+  margin: 5px 0;
 }
