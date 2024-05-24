@@ -1,44 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike's Burger</title>
-    <meta name="author" content="Yancy Veraliz Rodriguez Alvarez">
-    <meta name="description" content="Creating a site plan that will be used to communicate with the client and the development team">
-    <link rel="stylesheet" href="styles/siteplan.css">
-</head>
-<body>
-    <header>
-        <h1>Mike's Burger</h1>
-    </header>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mike's Burger</title>
+        <meta name="Mike's Burger Home Page" content="Mike's Burger the delicious burges we can offer">
+        <meta name="author" content="Yancy Rodriguez">
+        <link rel="stylesheet" href="styles/siteplan.css">
+    </head>
+    <body>
+     <header>
+        <img src="images/home_pic.jpg" alt="Mike's Burger Site Plan Logo">
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+     </header>
+     
+     <main>
+        <h1>Home</h1>
+        <div class="fullimage">
+            <img src="images/home_pic.jpg" alt="Hompage">
+            <h3>FIND YOUR NEXT GREATEST ADVENTURE</h3>
+        </div>
 
-    <main>
-        <section class="menu">
-            <div class="burger">
-                <img src="burger1.jpg" alt="Hamburguesa clásica">
-                <h2>Hamburguesa Clásica</h2>
-                <p>$10.00</p>
+        <h2>Newsletter</h2>
+            <form>
+            <fieldset>
+                <legend>Sign Up today and discover discounts available</legend>
+                <div class="newsletter">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="email">Email Adress:</label>
+                <input type="text" id="email" name="email">
+                </div>
+            </fieldset>
+            <button type="submit">Sign up</button>
+        </form>
+
+        <div class="visit">
+            <a href="trips.html" target="_blank">VIEW ALL ADVENTURES</a>
+            <img src="images/visit_page.jpg" alt="visit_us">
+        </div>
+
+        <nav class="boxvisit">
+            <div class="visit-class"><img src="images/visit_class1.jpg" alt="visit_class1">
             </div>
-            <div class="burger">
-                <img src="burger2.jpg" alt="Hamburguesa con queso">
-                <h2>Hamburguesa con Queso</h2>
-                <p>$12.00</p>
+                <div class="description">
+                <h3>FEATURE DESTINATIONS</h3>
+                <p>CentralAmerica Rafting offers unique vacation itineraries across the Central America.</p>
+                </div>
+            <div class="visit-class2"><img src="images/visit_class2.jpg" alt="visit_class2">
             </div>
-            <div class="burger">
-                <img src="burger3.jpg" alt="Hamburguesa BBQ">
-                <h2>Hamburguesa BBQ</h2>
-                <p>$15.00</p>
-            </div>
-        </section>
+                <div class="description2">
+                <h3>EXPLORE ACTIVITIES</h3>
+                <p>As a leader in rafting and adventure travel for more than five decades, you could say we know a thing or two about providing an unforgettable vacation no matter what type of experience you're looking for.</p>
+                </div>
+
+        </nav>           
     </main>
 
-    <footer>
-        <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-        </div>
-    </footer>
+        <footer>
+              <p>©️2024 🚣‍♂️ Central America Rafting 🚣‍♂️ Yancy Rodriguez</p>  
+              <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://app.moqups.com/7TQWdxUtZvhpHoHNl4RpVgncBSo9134f/view/page/a50e0b473" target="_blank">
+                    <img src="images/wirefrime_trips.png" alt="wireframe link">
+                </a>
+            </nav>
+        </footer>
 </body>
 </html>
