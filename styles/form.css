@@ -16,7 +16,7 @@ body {
   border-radius: 8px;
   padding: 20px;
   width: 100%;
-  max-width: 400px; /* Ajuste del tamaño máximo del contenedor */
+  max-width: 400px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: #5e5959;
 }
 
 footer {
@@ -98,13 +98,11 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 12px;
-  margin-top: 20px;
-  border-radius: 0 0 8px 8px;
+  margin-top: 10px;
+  border-radius: 0 0 1px 1px;
   box-sizing: border-box;
   width: 100%;
-  max-width: 400px; /* Ajuste del tamaño máximo del footer */
 }
-
 footer p {
-  margin: 5px 0;
+  margin: 8px 0;
 }
