@@ -3,67 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review</title>
+    <title>Product Review Form</title>
     <meta name="author" content="Yancy Veraliz Rodriguez Alvarez">
-    <meta name="description" content="Yancy Veraliz Rodriguez - WDD131 Forms">
+    <meta name="description" content="Stardard HTML form">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
-<body>
-    <div class="review-container">
-        <h1>Product Review</h1>
-        <form>
-            <label for="product-name">Product Name</label>
-            <select id="product-name" name="product-name" required>
-                <option value="">Choose a Product ...</option>
-                <!-- More options here -->
-            </select>
+<header>
+    <h1>Product Review</h1>
+</header>
+<main>
+    <form method="get" action="review.html" id="reviewForm">
+        <fieldset>
 
+            <label>Product Name
+                <select name="productName" id="productName" required>
+                    <option value="" disabled selected>Select a Product &#9662;</option>
+                </select>
+            </label>
 
-            <label>Overall Rating</label>
-            <div id="rating">
-                <input type="radio" id="star1" name="rating" value="1" required>
-                <label for="star1">☆</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">☆</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">☆</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">☆</label>
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">☆</label>
+            <div id="overallRating">Overall Rating</div>
+            <div id="radioButtons">
+                <label><input type="radio" name="starRating" value="oneStar" class="ratingButton" required>☆</label>
+                <label><input type="radio" name="starRating" value="twoStar" class="ratingButton" required>☆☆</label>
+                <label><input type="radio" name="starRating" value="threeStar" class="ratingButton" required>☆☆☆</label>
+                <label><input type="radio" name="starRating" value="fourStar" class="ratingButton" required>☆☆☆☆</label>
+                <label><input type="radio" name="starRating" value="fiveStar" class="ratingButton" required>☆☆☆☆☆</label> 
             </div>
 
-            <label for="installation-date">Date of Installation</label>
-            <input type="date" id="installation-date" name="installation-date" required>
+            <label id="installLabel">Date of Installation <input type="date" name="installDate" id="installDate" required></label>
 
-            <label>Which features did you find useful in the product? (Check all that apply)</label>
-            <div class="features">
-                <input type="checkbox" id="durability" name="feature" value="durability">
-                <label for="durability">Durability</label>
-                <input type="checkbox" id="ease-of-use" name="feature" value="ease-of-use">
-                <label for="ease-of-use">Ease of Use</label>
-                <input type="checkbox" id="performance" name="feature" value="performance">
-                <label for="performance">Performance</label>
-                <input type="checkbox" id="design" name="feature" value="design">
-                <label for="design">Design</label>
-            </div>
+            <div id="featuresLabel">Which features did you find useful in the product?<br><i>(Check all that apply)</i></div>
+            <label><input type="checkbox" name="durability" value="yes" class="usefulFeatures">  Durability</label>
+            <label><input type="checkbox" name="easeOfUse" value="yes" class="usefulFeatures">  Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes" class="usefulFeatures">  Performance</label>
+            <label><input type="checkbox" name="design" value="yes" class="usefulFeatures" id="bottomCheckbox">  Design</label>
 
-            <label for="review">Written Review (Optional)</label>
-            <textarea id="review" name="review"></textarea>
+            <label><span id="reviewLabel">Written Review <span class="blue">(Optional)</span></span><textarea id="writtenReview" name="writtenReview" rows="6"></textarea></label>
 
-            <label for="name">Your Name (Optional)</label>
-            <input type="text" id="name" name="name">
+            <label id="nameLabel">Your Name <span class="blue">(Optional)</span><input type="text" id="name" name="userName"></label>
 
-            <button type="submit">Post Review</button>
-        </form>
+            <input id="postReview" type="submit" value="Post Review">
+
+        </fieldset>
+    </form>
+</main>
+ 
+
         <footer>
             <p>©️<span id="currentyear"></span> 🌼 Yancy Veraliz Rodriguez 🌼 El Salvador</p>
             <p> Last Modified: <span id="lastModified"></span></p>
         </footer>
-    </div>
 </body>
 </html>

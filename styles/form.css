@@ -1,97 +1,152 @@
+* { 
+  box-sizing: border-box; 
+  margin: auto;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.review-container {
-  background-color: #F0F0F5;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  width: 100%;
-  max-width: 400px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-h1 {
+header {
+  padding: 1rem;
   background-color: #3A003D;
-  color: #fff;
-  padding: 10px;
+  color: white;
   text-align: center;
-  margin: -20px -20px 20px -20px;
-  border-radius: 8px 8px 0 0;
+  margin-bottom: 1rem;
 }
 
-label {
+#reviewForm {
+  max-width: 500px;
+}
+
+#reviewForm fieldset {
+  margin: .5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #ece0f7;
+}
+
+#reviewForm label {
   display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
 }
 
-select, input[type="date"], textarea, input[type="text"], button {
+#reviewForm select {
+  background-color: white;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 17px;
+  color: #555;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  appearance: none;
+  margin: .5rem 0;
 }
 
-#rating {
+#overallRating {
+  margin-top: 2.5rem;
+}
+
+#radioButtons {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  margin: .2rem;
 }
 
-#rating input {
-  display: none;
-}
-
-#rating label {
-  font-size: 2em;
-  color: gray;
-  cursor: pointer;
-}
-
-#rating input:checked ~ label {
-  color: gold;
-}
-
-#rating label:hover,
-#rating label:hover ~ label {
-  color: gold;
-}
-
-.features {
+.ratingButton {
+  margin-top: .5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-size: 12px;
 }
 
-.features input {
-  margin-right: 10px;
+#installLabel {
+  margin-top: 2.5rem;
 }
 
-button {
-  background-color: #f0f0f0;
-  color: #000;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
+#installDate {
+  display: block;
+  background-color: white;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 17px;
+  color: #555;
+  width: 100%;
+  appearance: none;
+  margin: .5rem 0;
+}
+
+#featuresLabel {
+  margin-top: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.usefulFeatures {
+  margin: .5rem 0;
+}
+
+#bottomCheckbox {
+  margin-bottom: 2.5rem;
+}
+
+#reviewLabel {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+
+#writtenReview {
+  width: 100%;
+  border: solid 1px #999;
+  border-radius: 6px;
+  margin-top: .5rem;
+}
+
+#nameLabel {
+  margin-top: 2.5rem;
+}
+
+#name {
+  display: block;
+  background-color: white;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 17px;
+  color: #555;
+  width: 100%;
+  appearance: none;
+  margin: .5rem 0;
+}
+
+#postReview {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 18px;
+  border: solid 1px #999;
+  border-radius: 6px;
+  font-size: large;
   font-weight: bold;
+  appearance: none;
 }
 
-button:hover {
-  background-color: #5e5959;
+
+.blue {
+  color: #3A003D;
+  font-size: smaller;
 }
 
+/* review.html */
+
+#postReviewHeading {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+main p {
+  text-align: center;
+  margin: 1rem auto;
+  margin-bottom: 5rem;
+}
 footer {
   background-color: #3A003D;
   color: #fff;
