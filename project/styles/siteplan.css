@@ -14,6 +14,16 @@ header {
     text-align: center;
     color: black;
     background-color: #FFD500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
 }
 
 body {
@@ -24,6 +34,20 @@ body {
     text-align: center;
     background-color: #131212;
     color: white;
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: underline;
 }
 
 
