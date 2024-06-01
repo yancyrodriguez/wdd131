@@ -86,7 +86,7 @@ figure img {
 }
 
 .hero h1 {
-    position : absolute;
+    position : center;
     color : var(--primary-color);
     top : 5px;
     left : 250px;
