@@ -86,7 +86,7 @@ figure img {
 }
 
 .hero h1 {
-    position : center;
+    position: static;
     color : var(--primary-color);
     top : 5px;
     left : 250px;
@@ -134,6 +134,9 @@ footer img {
     width: 40px;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
 
 form {
     width: 650px;
